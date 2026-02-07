@@ -1,4 +1,4 @@
-# Today Tasks App (iOS Case Study)
+# Today Tasks App
 
 This is an iOS application built to manage and display tasks for the current day.  
 The project focuses on clean architecture, testable business logic, and predictable time-based behavior, following modern iOS engineering best practices. The app demonstrates how to structure a simple product feature in a scalable, production-ready way.
