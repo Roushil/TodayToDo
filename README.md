@@ -62,9 +62,8 @@ The project focuses on clean architecture, testable business logic, and predicta
 UI: SwiftUI  
 Architecture: MVVM  
 State Handling: @Published  
-Business Logic: ViewModel, Service layer  
-Persistence: SwiftData 
 Testing: XCTest  
+Persistence: SwiftData
 
 ## How to Run
 
