@@ -3,16 +3,13 @@
 This is an iOS application built to manage and display tasks for the current day.  
 The project focuses on clean architecture, testable business logic, and predictable time-based behavior, following modern iOS engineering best practices. The app demonstrates how to structure a simple product feature in a scalable, production-ready way.
 
+
 ## Features
 
-**Today’s Tasks List**  
-Displays tasks scheduled for the current day in a clean, lightweight SwiftUI interface.
-
-**Automatic Task Cleanup**  
-Outdated tasks are automatically filtered and removed based on the current date.
-
-**Deterministic Time Handling**  
-System time is abstracted to allow predictable behavior and reliable unit testing.
+- Displays tasks scheduled for **today**
+- Automatically removes outdated tasks
+- Deterministic time handling via abstraction
+- Fully **offline-first** with local persistence
 
 ## Modern Architecture
 
@@ -20,6 +17,7 @@ System time is abstracted to allow predictable behavior and reliable unit testin
 - Protocol-oriented design
 - Dependency injection for system dependencies
 - Clear separation of UI, business logic, and services
+- Local-only persistence (no network layer)
 
 ## Core Components
 
@@ -37,12 +35,21 @@ System time is abstracted to allow predictable behavior and reliable unit testin
 *Models*
 - TodayTask
 
+**Persistence**
+- SwiftData
+
 ## Scalable & Adaptive UI
 
 - Built using SwiftUI
 - Stateless, reusable row components
 - Responsive layout across device sizes
 - Minimal logic inside views
+
+## Offline-First Design
+
+- No APIs
+- No backend
+- No internet dependency
 
 ## Unit Tests
 
@@ -56,6 +63,7 @@ UI: SwiftUI
 Architecture: MVVM  
 State Handling: @Published  
 Business Logic: ViewModel, Service layer  
+Persistence: SwiftData 
 Testing: XCTest  
 
 ## How to Run
